@@ -132,9 +132,10 @@
           .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.cards--single{grid-template-columns:repeat(2,minmax(0,1fr))}.offer-card{display:grid;grid-template-columns:minmax(190px,.9fr) minmax(0,1.1fr);min-height:250px;background:#fff;border:1px solid #ecdcd2;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(57,39,29,.06)}.offer-card--wide{grid-template-columns:minmax(240px,.7fr) minmax(0,1.3fr)}.offer-media{position:relative;background:#f4ebe5}.image-placeholder{height:100%;min-height:250px;display:grid;place-content:center;text-align:center;color:#9c877b;padding:22px}.image-placeholder span{font-weight:800;font-size:.88rem;letter-spacing:.05em}.image-placeholder small{margin-top:6px}.discount-badge{position:absolute;z-index:2;top:14px;left:14px;width:72px;height:72px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;background:var(--orange);color:#fff;font-weight:900;font-size:.86rem;line-height:1.05;box-shadow:0 8px 20px rgba(190,55,0,.2)}.offer-body{display:flex;flex-direction:column;padding:22px}.offer-body h3{margin:0 0 12px;font-size:1.16rem;line-height:1.18}.price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.cyber-price{color:var(--orange);font-size:2rem;line-height:1;letter-spacing:-.04em}.normal-price{color:#766d67}.saving{display:inline-flex;align-self:flex-start;margin:12px 0 10px;padding:6px 10px;border-radius:8px;background:#fff0e6;color:#6d4f40;font-size:.9rem}.meta{margin-bottom:16px;color:#5d5550;font-size:.88rem}.buy{margin-top:auto;min-height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;text-decoration:none;font-weight:850;font-size:.9rem}.buy:hover{background:var(--orange-dark)}.buy.is-disabled{background:#d8cec8;color:#7f746d;cursor:not-allowed}
           .reviews{padding:48px 0;border-top:1px solid var(--line)}.reviews h2,.faq h2{margin:0 0 10px;font-size:2rem;letter-spacing:-.03em}.reviews>div>p,.faq>div>p{margin:0 0 24px;color:var(--muted)}.reviews-frame{min-height:200px;border:1px dashed #d8b9a6;border-radius:18px;background:#fff8f3;padding:18px}.reviews-placeholder{min-height:160px;display:grid;place-content:center;text-align:center;color:#8b7569}.reviews-placeholder strong{display:block}.reviews-placeholder small{display:block;margin-top:6px}
           .confidence{padding:22px 0;background:#fff1e7;border-top:1px solid #f0d5c3;border-bottom:1px solid #f0d5c3}.confidence-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.confidence-item{text-align:center;font-weight:800;font-size:.9rem}
+          .clinics{padding:52px 0;border-top:1px solid var(--line)}.clinics h2{margin:0 0 8px;font-size:2rem;letter-spacing:-.03em}.clinics-intro{margin:0 0 24px;color:var(--muted)}.clinic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.clinic-card{display:grid;grid-template-columns:minmax(190px,.9fr) minmax(0,1.1fr);min-height:270px;background:#fff;border:1px solid #ecdcd2;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(57,39,29,.06)}.clinic-media{background:#f4ebe5;display:grid;place-content:center;text-align:center;color:#9c877b;padding:22px}.clinic-media strong{font-size:.88rem;letter-spacing:.05em}.clinic-media small{margin-top:6px}.clinic-body{display:flex;flex-direction:column;padding:22px}.clinic-body h3{margin:0 0 10px;font-size:1.35rem;line-height:1.15}.clinic-address{margin:0 0 14px;color:#5d5550;line-height:1.5}.clinic-contact{display:grid;gap:7px;margin-bottom:18px;font-size:.9rem}.clinic-contact a{color:var(--ink);text-decoration:none}.clinic-contact a:hover{text-decoration:underline}.clinic-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}.clinic-actions a{min-height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:850;font-size:.86rem}.clinic-actions .primary{background:var(--orange);color:#fff}.clinic-actions .secondary{border:1px solid #e4c9b9;color:var(--orange);background:#fff}
           .faq{padding:50px 0 74px}.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{border:1px solid #eadbd1;border-radius:12px;background:#fff;padding:15px 18px}.faq summary{cursor:pointer;font-weight:750}.faq details p{margin:12px 0 0;color:var(--muted);line-height:1.5;font-size:.93rem}
-          @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:280px}.trust-grid,.confidence-grid{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr}.offer-card,.offer-card--wide{grid-template-columns:minmax(180px,.8fr) minmax(0,1.2fr)}}
-          @media(max-width:640px){.wrap{width:calc(100% - 28px)}.hero{padding-top:36px}.hero h1{font-size:clamp(2.7rem,14vw,4rem)}.trust-grid,.confidence-grid,.faq-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:1px solid var(--line)}.offer-card,.offer-card--wide{grid-template-columns:1fr}.offer-media,.image-placeholder{min-height:210px}.discount-badge{width:64px;height:64px}.section-head h2{font-size:1.65rem}.hero-cta{width:100%}}
+          @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:280px}.trust-grid,.confidence-grid{grid-template-columns:1fr 1fr}.cards,.clinic-grid{grid-template-columns:1fr}.offer-card,.offer-card--wide,.clinic-card{grid-template-columns:minmax(180px,.8fr) minmax(0,1.2fr)}}
+          @media(max-width:640px){.wrap{width:calc(100% - 28px)}.hero{padding-top:36px}.hero h1{font-size:clamp(2.7rem,14vw,4rem)}.trust-grid,.confidence-grid,.faq-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:1px solid var(--line)}.offer-card,.offer-card--wide,.clinic-card{grid-template-columns:1fr}.offer-media,.image-placeholder,.clinic-media{min-height:210px}.discount-badge{width:64px;height:64px}.section-head h2{font-size:1.65rem}.clinic-actions{grid-template-columns:1fr}.hero-cta{width:100%}}
         </style>
         <main class="page">
           <section class="hero">
@@ -154,7 +155,7 @@
                 <div class="trust-item">Promociones por tiempo limitado</div>
                 <div class="trust-item">Compra online</div>
                 <div class="trust-item">Equipo profesional</div>
-                <div class="trust-item">Providencia · Santiago Centro</div>
+                <div class="trust-item">Clínica Providencia · Clínica Santiago Centro</div>
               </div>
             </div>
           </section>
@@ -178,9 +179,57 @@
           <section class="confidence">
             <div class="wrap confidence-grid">
               <div class="confidence-item">Equipo profesional</div>
-              <div class="confidence-item">2 sedes</div>
+              <div class="confidence-item">2 clínicas</div>
               <div class="confidence-item">Compra online</div>
               <div class="confidence-item">Vigencias informadas</div>
+            </div>
+          </section>
+
+
+          <section class="clinics">
+            <div class="wrap">
+              <h2>Nuestras Clínicas</h2>
+              <p class="clinics-intro">Puedes utilizar tu promoción en cualquiera de nuestras clínicas: Santiago Centro o Providencia.</p>
+              <div class="clinic-grid">
+                <article class="clinic-card">
+                  <div class="clinic-media">
+                    <strong>IMAGEN CLÍNICA SANTIAGO CENTRO</strong>
+                    <small>Agregarás esta imagen después</small>
+                  </div>
+                  <div class="clinic-body">
+                    <h3>Clínica Santiago Centro</h3>
+                    <p class="clinic-address">Nueva York 57, Of. 603, Santiago Centro.<br>Metro Universidad de Chile.</p>
+                    <div class="clinic-contact">
+                      <a href="mailto:recepcionsc@raquischile.cl">recepcionsc@raquischile.cl</a>
+                      <a href="tel:+56232451349">+56 2 3245 1349</a>
+                      <a href="https://wa.me/56985300287" target="_blank" rel="noopener noreferrer">WhatsApp: +56 9 8530 0287</a>
+                    </div>
+                    <div class="clinic-actions">
+                      <a class="primary" href="https://www.google.com/maps/search/?api=1&query=Nueva+York+57+Oficina+603+Santiago+Centro+Chile" target="_blank" rel="noopener noreferrer">¿CÓMO LLEGAR?</a>
+                      <a class="secondary" href="https://raquischile.cl/centro/clinica-santiago-centro-metro-universidad-chile/" target="_blank" rel="noopener noreferrer">MÁS INFORMACIÓN</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="clinic-card">
+                  <div class="clinic-media">
+                    <strong>IMAGEN CLÍNICA PROVIDENCIA</strong>
+                    <small>Agregarás esta imagen después</small>
+                  </div>
+                  <div class="clinic-body">
+                    <h3>Clínica Providencia</h3>
+                    <p class="clinic-address">Dr. Manuel Barros Borgoño 71, Of. 806, Providencia.<br>Metro Manuel Montt.</p>
+                    <div class="clinic-contact">
+                      <a href="mailto:recepcion@raquischile.cl">recepcion@raquischile.cl</a>
+                      <a href="tel:+56222060643">+56 2 2206 0643</a>
+                      <a href="https://wa.me/56941263259" target="_blank" rel="noopener noreferrer">WhatsApp: +56 9 4126 3259</a>
+                    </div>
+                    <div class="clinic-actions">
+                      <a class="primary" href="https://www.google.com/maps/search/?api=1&query=Dr+Manuel+Barros+Borgono+71+Oficina+806+Providencia+Chile" target="_blank" rel="noopener noreferrer">¿CÓMO LLEGAR?</a>
+                      <a class="secondary" href="https://raquischile.cl/centro/clinica-providencia/" target="_blank" rel="noopener noreferrer">MÁS INFORMACIÓN</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
             </div>
           </section>
 
@@ -191,7 +240,7 @@
               <div class="faq-grid">
                 <details><summary>¿Hasta cuándo puedo comprar las promociones Cyber?</summary><p>Puedes aprovechar las promociones Cyber hasta el <strong>miércoles 7 de octubre</strong> o hasta agotar stock. Te recomendamos comprar con anticipación para asegurar tu promoción.</p></details>
                 <details><summary>¿Cuánto tiempo tengo para usar mi plan?</summary><p>Cada plan o Gift Card tiene una vigencia específica, indicada en cada promoción. El plazo comienza a contar desde el día en que realizas la compra.</p></details>
-                <details><summary>¿Puedo usar las promociones en ambas sedes?</summary><p>Sí. Puedes agendar tus sesiones en cualquiera de nuestras sedes: <strong>Santiago Centro o Providencia</strong>.</p></details>
+                <details><summary>¿Puedo usar las promociones en ambas clínicas?</summary><p>Sí. Puedes agendar tus sesiones en cualquiera de nuestras clínicas: <strong>Santiago Centro o Providencia</strong>.</p></details>
                 <details><summary>¿Las promociones son acumulables con otros descuentos?</summary><p>No. Las promociones Cyber no son acumulables con otros descuentos o promociones vigentes.</p></details>
                 <details><summary>¿Cómo recibo mi compra o Gift Card?</summary><p>Realiza el pago a través de <strong>Getnet</strong> e ingresa correctamente tus datos de contacto. Una vez confirmado el pago, nuestro equipo se comunicará contigo para continuar con el proceso.</p><p>Si compraste una <strong>Gift Card</strong>, la recibirás en formato digital en el correo electrónico que ingresaste al momento de la compra.</p></details>
               </div>
