@@ -10,6 +10,7 @@
     connectedCallback() {
       this.render();
       this.bind();
+      this.mountGoogleReviews();
       if (!this.hasAttribute('contained')) {
         this.fullBleed();
         this._resize = () => this.fullBleed();
@@ -130,7 +131,7 @@
           .trust-strip{margin-top:34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.72)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{padding:18px 20px;text-align:center;font-weight:750;font-size:.9rem}.trust-item+.trust-item{border-left:1px solid var(--line)}
           .offers{padding:54px 0 18px}.offer-section{margin-bottom:48px}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:18px}.section-head h2{margin:0;font-size:2rem;letter-spacing:-.03em}.section-head p{margin:6px 0 0;color:var(--muted)}
           .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.cards--single{grid-template-columns:repeat(2,minmax(0,1fr))}.offer-card{display:grid;grid-template-columns:minmax(190px,.9fr) minmax(0,1.1fr);min-height:250px;background:#fff;border:1px solid #ecdcd2;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(57,39,29,.06)}.offer-card--wide{grid-template-columns:minmax(240px,.7fr) minmax(0,1.3fr)}.offer-media{position:relative;background:#f4ebe5}.image-placeholder{height:100%;min-height:250px;display:grid;place-content:center;text-align:center;color:#9c877b;padding:22px}.image-placeholder span{font-weight:800;font-size:.88rem;letter-spacing:.05em}.image-placeholder small{margin-top:6px}.discount-badge{position:absolute;z-index:2;top:14px;left:14px;width:72px;height:72px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;background:var(--orange);color:#fff;font-weight:900;font-size:.86rem;line-height:1.05;box-shadow:0 8px 20px rgba(190,55,0,.2)}.offer-body{display:flex;flex-direction:column;padding:22px}.offer-body h3{margin:0 0 12px;font-size:1.16rem;line-height:1.18}.price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.cyber-price{color:var(--orange);font-size:2rem;line-height:1;letter-spacing:-.04em}.normal-price{color:#766d67}.saving{display:inline-flex;align-self:flex-start;margin:12px 0 10px;padding:6px 10px;border-radius:8px;background:#fff0e6;color:#6d4f40;font-size:.9rem}.meta{margin-bottom:16px;color:#5d5550;font-size:.88rem}.buy{margin-top:auto;min-height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;text-decoration:none;font-weight:850;font-size:.9rem}.buy:hover{background:var(--orange-dark)}.buy.is-disabled{background:#d8cec8;color:#7f746d;cursor:not-allowed}
-          .reviews{padding:48px 0;border-top:1px solid var(--line)}.reviews h2,.faq h2{margin:0 0 10px;font-size:2rem;letter-spacing:-.03em}.reviews>div>p,.faq>div>p{margin:0 0 24px;color:var(--muted)}.reviews-frame{min-height:200px;border:1px dashed #d8b9a6;border-radius:18px;background:#fff8f3;padding:18px}.reviews-placeholder{min-height:160px;display:grid;place-content:center;text-align:center;color:#8b7569}.reviews-placeholder strong{display:block}.reviews-placeholder small{display:block;margin-top:6px}
+          .reviews{padding:48px 0;border-top:1px solid var(--line)}.reviews h2,.faq h2{margin:0 0 10px;font-size:2rem;letter-spacing:-.03em}.reviews>div>p,.faq>div>p{margin:0 0 24px;color:var(--muted)}.reviews-frame{min-height:200px;border:1px solid #ecdcd2;border-radius:18px;background:#fff;padding:18px;box-shadow:0 12px 34px rgba(57,39,29,.05)}::slotted([slot="google-reviews"]){display:block;width:100%}.reviews-placeholder{min-height:160px;display:grid;place-content:center;text-align:center;color:#8b7569}.reviews-placeholder strong{display:block}.reviews-placeholder small{display:block;margin-top:6px}
           .confidence{padding:22px 0;background:#fff1e7;border-top:1px solid #f0d5c3;border-bottom:1px solid #f0d5c3}.confidence-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.confidence-item{text-align:center;font-weight:800;font-size:.9rem}
           .clinics{padding:52px 0;border-top:1px solid var(--line)}.clinics h2{margin:0 0 8px;font-size:2rem;letter-spacing:-.03em}.clinics-intro{margin:0 0 24px;color:var(--muted)}.clinic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.clinic-card{display:grid;grid-template-columns:minmax(190px,.9fr) minmax(0,1.1fr);min-height:270px;background:#fff;border:1px solid #ecdcd2;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(57,39,29,.06)}.clinic-media{background:#f4ebe5;display:grid;place-content:center;text-align:center;color:#9c877b;padding:22px}.clinic-media strong{font-size:.88rem;letter-spacing:.05em}.clinic-media small{margin-top:6px}.clinic-body{display:flex;flex-direction:column;padding:22px}.clinic-body h3{margin:0 0 10px;font-size:1.35rem;line-height:1.15}.clinic-address{margin:0 0 14px;color:#5d5550;line-height:1.5}.clinic-contact{display:grid;gap:7px;margin-bottom:18px;font-size:.9rem}.clinic-contact a{color:var(--ink);text-decoration:none}.clinic-contact a:hover{text-decoration:underline}.clinic-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:auto}.clinic-actions a{min-height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:850;font-size:.86rem}.clinic-actions .primary{background:var(--orange);color:#fff}.clinic-actions .secondary{border:1px solid #e4c9b9;color:var(--orange);background:#fff}
           .faq{padding:50px 0 74px}.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{border:1px solid #eadbd1;border-radius:12px;background:#fff;padding:15px 18px}.faq summary{cursor:pointer;font-weight:750}.faq details p{margin:12px 0 0;color:var(--muted);line-height:1.5;font-size:.93rem}
@@ -169,7 +170,7 @@
               <div class="reviews-frame">
                 <slot name="google-reviews">
                   <div class="reviews-placeholder">
-                    <div><strong>WIDGET / SCRIPT DE RESEÑAS DE GOOGLE</strong><small>Lo insertaremos aquí cuando me compartas el script.</small></div>
+                    <div><strong>Cargando reseñas de Google…</strong></div>
                   </div>
                 </slot>
               </div>
@@ -245,6 +246,23 @@
             </div>
           </section>
         </main>`;
+    }
+
+    mountGoogleReviews() {
+      if (this.querySelector('[data-raquis-google-reviews]')) return;
+
+      const host = document.createElement('div');
+      host.setAttribute('slot', 'google-reviews');
+      host.setAttribute('data-raquis-google-reviews', '');
+      host.style.width = '100%';
+
+      const script = document.createElement('script');
+      script.src = 'https://cdn.trustindex.io/loader.js?cc33fc47993d918046660850d56';
+      script.defer = true;
+      script.async = true;
+
+      host.appendChild(script);
+      this.appendChild(host);
     }
 
     bind() {
