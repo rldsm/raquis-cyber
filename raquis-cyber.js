@@ -104,7 +104,7 @@
             </div>
             <div class="saving">Ahorras <strong>${item.saving}</strong></div>
             <div class="meta">${item.meta}</div>
-            <a class="buy js-buy ${disabled ? 'is-disabled' : ''}" data-offer="${item.key}" href="${href}" ${disabled ? 'aria-disabled="true"' : 'target="_blank" rel="noopener noreferrer"'}>COMPRAR →</a>
+            <a class="buy js-buy ${disabled ? 'is-disabled' : ''}" data-offer="${item.key}" href="${href}" ${disabled ? 'aria-disabled="true"' : 'target="_blank" rel="noopener noreferrer"'}>COMPRAR</a>
           </div>
         </article>`;
     }
@@ -147,7 +147,7 @@
                 <span class="eyebrow">CYBER RAQUIS</span>
                 <h1>Tu bienestar también está <span class="orange">en Cyber</span></h1>
                 <p>Descuentos especiales en quiropráctica, kinesiología, masoterapia, ondas de choque y Gift Cards. Compra online la promoción que más te acomode.</p>
-                <a class="hero-cta" href="#promociones">VER PROMOCIONES ↓</a>
+                <a class="hero-cta" href="#promociones">VER PROMOCIONES</a>
               </div>
               <div class="hero-visual">
                 <div><strong>ESPACIO PARA HERO</strong><small>Sin imagen por ahora</small></div>
