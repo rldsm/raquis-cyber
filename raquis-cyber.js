@@ -91,7 +91,8 @@
     purchaseUrl(key) {
       const defaults = {
         'gift-quiro': 'https://micrositios.getnet.cl/link/show?genid=178909&code=c9772816c78e9b0a4331c6deac08abf848963024f4528ac86bf594cdcbbed956',
-        'gift-maso': 'https://micrositios.getnet.cl/link/show?genid=178910&code=dec1c7309b1f59087f4bbcbb243d28a378b10e074821e506979e625a03ee6ae3'
+        'gift-maso': 'https://micrositios.getnet.cl/link/show?genid=178910&code=dec1c7309b1f59087f4bbcbb243d28a378b10e074821e506979e625a03ee6ae3',
+        'quiro-10': 'https://micrositios.getnet.cl/link/show?genid=178911&code=bb5ce4f2d440741eb85fe844ae72ea8904ecd0d1810730425e0303383035e15e'
       };
       const attr = this.getAttribute(`buy-${key}`);
       return attr || defaults[key] || '#';
