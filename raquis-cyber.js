@@ -176,7 +176,6 @@
               <div class="why-grid">
                 <div class="why-copy">
                   <h2>¿Por qué elegir Raquis?</h2>
-                  <p class="lead">En Clínica Raquis llevamos más de <strong>9 años</strong> acompañando a personas con molestias de cuello, espalda, rodillas y otras zonas del cuerpo, combinando distintas áreas de atención según cada caso.</p>
                   <p class="lead">Nuestro equipo cuenta con profesionales con <strong>más de 15 años de experiencia clínica</strong> y trabajamos integrando <strong>quiropráctica, kinesiología y masoterapia</strong>.</p>
                   <p class="lead">Además, nuestras atenciones de quiropráctica son realizadas por <strong>quiroprácticos universitarios</strong>.</p>
 </div>
