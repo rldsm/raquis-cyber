@@ -168,7 +168,7 @@
                 <span class="eyebrow">CYBER RAQUIS</span>
                 <h1>Tu bienestar también está <span class="orange">en Cyber</span></h1>
                 <p>Descuentos especiales en quiropráctica, kinesiología, masoterapia, ondas de choque y Gift Cards. Compra online la promoción que más te acomode.</p>
-                <a class="hero-cta" href="#promociones">VER PROMOCIONES</a>
+                <a class="hero-cta js-promotions" href="#promociones">VER PROMOCIONES</a>
               </div>
               <div class="hero-visual">
                 <img src="${ASSET_BASE}hero.webp" alt="Atención quiropráctica en Clínica Raquis" decoding="async" fetchpriority="high">
@@ -334,6 +334,15 @@
     }
 
     bind() {
+      const promotionsLink = this.shadowRoot.querySelector('.js-promotions');
+      if (promotionsLink) {
+        promotionsLink.addEventListener('click', event => {
+          event.preventDefault();
+          const target = this.shadowRoot.getElementById('promociones');
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
       this.shadowRoot.querySelectorAll('.js-buy').forEach(link => {
         link.addEventListener('click', event => {
           if (link.getAttribute('aria-disabled') === 'true') {
