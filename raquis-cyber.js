@@ -11,6 +11,7 @@
       this.render();
       this.bind();
       this.mountGoogleReviews();
+      this.animatePatientCount();
       if (!this.hasAttribute('contained')) {
         this.fullBleed();
         this._resize = () => this.fullBleed();
@@ -128,10 +129,10 @@
           :host{--orange:#e84a05;--orange-dark:#c93b00;--ink:#25211f;--muted:#6f6761;--line:#eadbd1;--soft:#fff6ef;display:block;background:#fff;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
           *{box-sizing:border-box}.page{overflow:hidden;background:linear-gradient(180deg,#fffaf7 0,#fff 36%,#fffaf7 100%)}.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
           .hero{padding:64px 0 34px}.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.82fr);gap:44px;align-items:center}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid var(--orange);border-radius:999px;color:var(--orange);font-weight:850;font-size:.82rem;letter-spacing:.04em}.hero h1{margin:18px 0 16px;max-width:700px;font-size:clamp(3rem,5.7vw,5.6rem);line-height:.93;letter-spacing:-.055em}.hero h1 .orange{color:var(--orange)}.hero p{max-width:690px;margin:0;color:var(--muted);font-size:1.15rem;line-height:1.55}.hero-cta{display:inline-flex;margin-top:26px;min-height:58px;padding:0 26px;align-items:center;justify-content:center;background:linear-gradient(#ef5509,#df4501);border-radius:13px;color:#fff;text-decoration:none;font-weight:850;box-shadow:0 12px 28px rgba(210,65,0,.2)}.hero-visual{min-height:390px;border:1px dashed #d8b9a6;border-radius:24px;background:linear-gradient(135deg,#fff1e7,#f8eee7);display:grid;place-items:center;text-align:center;color:#8a7569}.hero-visual strong{display:block;font-size:1.1rem}.hero-visual small{display:block;margin-top:6px}
-          .trust-strip{margin-top:34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.72)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{padding:18px 20px;text-align:center;font-weight:750;font-size:.9rem}.trust-item+.trust-item{border-left:1px solid var(--line)}
+          .trust-strip{margin-top:34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.72)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{padding:18px 20px;text-align:center;font-weight:750;font-size:.9rem}.trust-item+.trust-item{border-left:1px solid var(--line)}.patient-proof{padding:28px 0 8px}.patient-proof p{margin:0;text-align:center;font-size:clamp(1.65rem,3vw,2.5rem);font-weight:850;letter-spacing:-.03em;line-height:1.15}.patient-count{color:var(--orange);font-variant-numeric:tabular-nums}
           .offers{padding:54px 0 18px}.offer-section{margin-bottom:48px}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin-bottom:18px}.section-head h2{margin:0;font-size:2rem;letter-spacing:-.03em}.section-head p{margin:6px 0 0;color:var(--muted)}
           .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.cards--single{grid-template-columns:repeat(2,minmax(0,1fr))}.offer-card{display:grid;grid-template-columns:minmax(190px,.9fr) minmax(0,1.1fr);min-height:250px;background:#fff;border:1px solid #ecdcd2;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(57,39,29,.06)}.offer-card--wide{grid-template-columns:minmax(240px,.7fr) minmax(0,1.3fr)}.offer-media{position:relative;background:#f4ebe5}.image-placeholder{height:100%;min-height:250px;display:grid;place-content:center;text-align:center;color:#9c877b;padding:22px}.image-placeholder span{font-weight:800;font-size:.88rem;letter-spacing:.05em}.image-placeholder small{margin-top:6px}.discount-badge{position:absolute;z-index:2;top:14px;left:14px;width:72px;height:72px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;background:var(--orange);color:#fff;font-weight:900;font-size:.86rem;line-height:1.05;box-shadow:0 8px 20px rgba(190,55,0,.2)}.offer-body{display:flex;flex-direction:column;padding:22px}.offer-body h3{margin:0 0 12px;font-size:1.16rem;line-height:1.18}.price-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.cyber-price{color:var(--orange);font-size:2rem;line-height:1;letter-spacing:-.04em}.normal-price{color:#766d67}.saving{display:inline-flex;align-self:flex-start;margin:12px 0 10px;padding:6px 10px;border-radius:8px;background:#fff0e6;color:#6d4f40;font-size:.9rem}.meta{margin-bottom:16px;color:#5d5550;font-size:.88rem}.buy{margin-top:auto;min-height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:var(--orange);color:#fff;text-decoration:none;font-weight:850;font-size:.9rem}.buy:hover{background:var(--orange-dark)}.buy.is-disabled{background:#d8cec8;color:#7f746d;cursor:not-allowed}
-          .why{padding:54px 0;border-top:1px solid var(--line)}.why-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);gap:30px;align-items:start}.why-copy h2{margin:0 0 14px;font-size:2.2rem;letter-spacing:-.03em}.why-copy .lead{margin:0 0 18px;color:var(--muted);font-size:1.05rem;line-height:1.6}.why-copy .headline{margin:0 0 14px;font-size:1.45rem;line-height:1.25;font-weight:850}.why-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.why-stat{padding:20px;border:1px solid #ecdcd2;border-radius:16px;background:#fff;box-shadow:0 10px 28px rgba(57,39,29,.05)}.why-stat strong{display:block;color:var(--orange);font-size:1.8rem;line-height:1;margin-bottom:7px}.why-stat span{display:block;font-weight:800}.why-stat small{display:block;margin-top:5px;color:var(--muted);line-height:1.4}
+          .why{padding:54px 0;border-top:1px solid var(--line)}.why-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);gap:30px;align-items:start}.why-copy h2{margin:0 0 14px;font-size:2.2rem;letter-spacing:-.03em}.why-copy .lead{margin:0 0 18px;color:var(--muted);font-size:1.05rem;line-height:1.6}.why-copy .headline{margin:0 0 14px;font-size:1.45rem;line-height:1.25;font-weight:850}.why-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.why-stat{padding:20px;border:1px solid #ecdcd2;border-radius:16px;background:#fff;box-shadow:0 10px 28px rgba(57,39,29,.05)}.why-stat strong{display:block;color:var(--orange);font-size:1.8rem;line-height:1;margin-bottom:7px}.why-stat span{display:block;font-weight:800}.why-stat small{display:block;margin-top:5px;color:var(--muted);line-height:1.4}
           .reviews{padding:48px 0;border-top:1px solid var(--line)}.reviews h2,.faq h2{margin:0 0 10px;font-size:2rem;letter-spacing:-.03em}.reviews>div>p,.faq>div>p{margin:0 0 24px;color:var(--muted)}.reviews-frame{min-height:200px;border:1px solid #ecdcd2;border-radius:18px;background:#fff;padding:18px;box-shadow:0 12px 34px rgba(57,39,29,.05)}::slotted([slot="google-reviews"]){display:block;width:100%}.reviews-placeholder{min-height:160px;display:grid;place-content:center;text-align:center;color:#8b7569}.reviews-placeholder strong{display:block}.reviews-placeholder small{display:block;margin-top:6px}
           .confidence{padding:22px 0;background:#fff1e7;border-top:1px solid #f0d5c3;border-bottom:1px solid #f0d5c3}.confidence-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.confidence-item{text-align:center;font-weight:800;font-size:.9rem}
           .clinics{padding:52px 0;border-top:1px solid var(--line)}.clinics h2{margin:0 0 8px;font-size:2rem;letter-spacing:-.03em}.clinics-intro{margin:0 0 24px;color:var(--muted)}.clinic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.clinic-card{display:grid;grid-template-columns:minmax(190px,.9fr) minmax(0,1.1fr);min-height:270px;background:#fff;border:1px solid #ecdcd2;border-radius:20px;overflow:hidden;box-shadow:0 12px 34px rgba(57,39,29,.06)}.clinic-media{background:#f4ebe5;display:grid;place-content:center;text-align:center;color:#9c877b;padding:22px}.clinic-media strong{font-size:.88rem;letter-spacing:.05em}.clinic-media small{margin-top:6px}.clinic-body{display:flex;flex-direction:column;padding:22px}.clinic-body h3{margin:0 0 10px;font-size:1.35rem;line-height:1.15}.clinic-address{margin:0 0 14px;color:#5d5550;line-height:1.5}.clinic-contact{display:grid;gap:7px;margin-bottom:18px;font-size:.9rem}.clinic-contact a{color:var(--ink);text-decoration:none}.clinic-contact a:hover{text-decoration:underline}.clinic-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:auto}.clinic-actions a{min-height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-weight:850;font-size:.86rem}.clinic-actions .primary{background:var(--orange);color:#fff}.clinic-actions .secondary{border:1px solid #e4c9b9;color:var(--orange);background:#fff}
@@ -160,6 +161,9 @@
                 <div class="trust-item">Clínica Providencia · Clínica Santiago Centro</div>
               </div>
             </div>
+            <div class="wrap patient-proof">
+              <p>Más de <span class="patient-count" data-patient-count>0</span> pacientes ya han confiado en nosotros.</p>
+            </div>
           </section>
 
           <div class="wrap offers" id="promociones">${offers}</div>
@@ -170,14 +174,12 @@
               <div class="why-grid">
                 <div class="why-copy">
                   <h2>¿Por qué elegir Raquis?</h2>
-                  <p class="headline">Más de 40.000 pacientes ya han confiado en nosotros.</p>
                   <p class="lead">En Clínica Raquis llevamos más de <strong>9 años</strong> acompañando a personas con molestias de cuello, espalda, rodillas y otras zonas del cuerpo, combinando distintas áreas de atención según cada caso.</p>
                   <p class="lead">Nuestro equipo cuenta con profesionales con <strong>más de 15 años de experiencia clínica</strong> y trabajamos integrando <strong>quiropráctica, kinesiología y masoterapia</strong>.</p>
                   <p class="lead">Además, nuestras atenciones de quiropráctica son realizadas por <strong>quiroprácticos universitarios</strong>.</p>
 </div>
 
                 <div class="why-stats">
-                  <div class="why-stat"><strong>+40.000</strong><span>pacientes</span><small>ya han confiado en Clínica Raquis.</small></div>
                   <div class="why-stat"><strong>+9 años</strong><span>de trayectoria</span><small>acompañando a pacientes en Santiago.</small></div>
                   <div class="why-stat"><strong>+15 años</strong><span>de experiencia clínica</span><small>en profesionales de nuestro equipo.</small></div>
                   <div class="why-stat"><strong>2 clínicas</strong><span>Santiago Centro y Providencia</span><small>para atenderte donde más te acomode.</small></div>
@@ -269,6 +271,39 @@
             </div>
           </section>
         </main>`;
+    }
+
+    animatePatientCount() {
+      const el = this.shadowRoot.querySelector('[data-patient-count]');
+      if (!el) return;
+
+      const target = 40000;
+      const duration = 1500;
+      const formatter = new Intl.NumberFormat('es-CL');
+
+      const run = () => {
+        const start = performance.now();
+        const tick = now => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = formatter.format(Math.floor(target * eased));
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = formatter.format(target);
+        };
+        requestAnimationFrame(tick);
+      };
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting)) {
+            observer.disconnect();
+            run();
+          }
+        }, { threshold: 0.5 });
+        observer.observe(el);
+      } else {
+        run();
+      }
     }
 
     mountGoogleReviews() {
