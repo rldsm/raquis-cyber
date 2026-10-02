@@ -164,7 +164,6 @@
             <div class="wrap patient-proof">
               <div class="patient-proof-inner">
                 <p>Más de <span class="patient-count" data-patient-count>0</span> pacientes ya han confiado en nosotros.</p>
-                <p class="patient-proof-sub">Llevamos más de <strong>9 años</strong> acompañando a personas con molestias de cuello, espalda, rodillas y otras zonas del cuerpo, combinando distintas áreas de atención según cada caso.</p>
               </div>
             </div>
           </section>
