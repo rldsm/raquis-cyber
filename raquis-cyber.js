@@ -189,12 +189,11 @@
               <h2>Preguntas frecuentes</h2>
               <p>Información importante antes de comprar.</p>
               <div class="faq-grid">
-                <details><summary>¿Hasta cuándo puedo comprar las promociones Cyber?</summary><p>La vigencia de compra se informará antes del lanzamiento de la campaña.</p></details>
-                <details><summary>¿Cuánto tiempo tengo para usar mi plan?</summary><p>Cada promoción indica su vigencia directamente en la card.</p></details>
-                <details><summary>¿Puedo usar las promociones en ambas sedes?</summary><p>Confirma las condiciones de uso al momento de la compra. Podemos ajustar este texto cuando definamos las reglas finales.</p></details>
-                <details><summary>¿Las promociones son acumulables con otros descuentos?</summary><p>No, salvo que las condiciones específicas de una promoción indiquen lo contrario.</p></details>
-                <details><summary>¿Cómo recibo mi compra o Gift Card?</summary><p>La confirmación y condiciones de uso se entregarán a través del flujo de compra online.</p></details>
-                <details><summary>¿Qué pasa con el Prof. Roberto Urzua en Kinesiología?</summary><p>Los planes Cyber de kinesiología publicados en esta landing excluyen atenciones con el Prof. Roberto Urzua.</p></details>
+                <details><summary>¿Hasta cuándo puedo comprar las promociones Cyber?</summary><p>Puedes aprovechar las promociones Cyber hasta el <strong>miércoles 7 de octubre</strong> o hasta agotar stock. Te recomendamos comprar con anticipación para asegurar tu promoción.</p></details>
+                <details><summary>¿Cuánto tiempo tengo para usar mi plan?</summary><p>Cada plan o Gift Card tiene una vigencia específica, indicada en cada promoción. El plazo comienza a contar desde el día en que realizas la compra.</p></details>
+                <details><summary>¿Puedo usar las promociones en ambas sedes?</summary><p>Sí. Puedes agendar tus sesiones en cualquiera de nuestras sedes: <strong>Santiago Centro o Providencia</strong>.</p></details>
+                <details><summary>¿Las promociones son acumulables con otros descuentos?</summary><p>No. Las promociones Cyber no son acumulables con otros descuentos o promociones vigentes.</p></details>
+                <details><summary>¿Cómo recibo mi compra o Gift Card?</summary><p>Realiza el pago a través de <strong>Getnet</strong> e ingresa correctamente tus datos de contacto. Una vez confirmado el pago, nuestro equipo se comunicará contigo para continuar con el proceso.</p><p>Si compraste una <strong>Gift Card</strong>, la recibirás en formato digital en el correo electrónico que ingresaste al momento de la compra.</p></details>
               </div>
             </div>
           </section>
