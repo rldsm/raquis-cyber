@@ -89,8 +89,11 @@
     }
 
     purchaseUrl(key) {
+      const defaults = {
+        'gift-quiro': 'https://micrositios.getnet.cl/link/show?genid=178909&code=c9772816c78e9b0a4331c6deac08abf848963024f4528ac86bf594cdcbbed956'
+      };
       const attr = this.getAttribute(`buy-${key}`);
-      return attr || '#';
+      return attr || defaults[key] || '#';
     }
 
     card(item) {
