@@ -167,7 +167,7 @@
               <div>
                 <span class="eyebrow">CYBER RAQUIS</span>
                 <h1>Tu bienestar también está <span class="orange">en Cyber</span></h1>
-                <p>Descuentos especiales en quiropráctica, kinesiología, masoterapia, ondas de choque y Gift Cards. Compra online la promoción que más te acomode.</p>
+                <p>Hasta un 40% de dcto. en quiropráctica, kinesiología, masoterapia, ondas de choque y Gift Cards. Compra online la promoción que más te acomode.</p>
                 <a class="hero-cta js-promotions" href="#promociones">VER PROMOCIONES</a>
               </div>
               <div class="hero-visual">
