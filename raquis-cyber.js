@@ -48,7 +48,7 @@
       return [
         {
           category: 'Quiropráctica',
-          description: 'Planes Cyber para continuar tu atención con un valor preferente.',
+          description: 'Planes pensados para el cuidado de tu columna y movilidad, con sesiones para continuar tu atención a precio Cyber.',
           items: [
             { discount: '40% DCTO.', title: 'Plan 10 sesiones de quiropráctica', cyber: '$210.000', normal: '$350.000', saving: '$140.000', meta: 'Vigencia: 10 meses', key: 'quiro-10', image: 'quiro-10.webp', alt: 'Atención quiropráctica' },
             { discount: '30% DCTO.', title: 'Plan 4 sesiones de quiropráctica', cyber: '$98.000', normal: '$140.000', saving: '$42.000', meta: 'Vigencia: 4 meses', key: 'quiro-4', image: 'quiro%204.webp', alt: 'Atención quiropráctica' }
@@ -56,7 +56,7 @@
         },
         {
           category: 'Kinesiología',
-          description: 'Elige el plan que mejor se ajuste a tu tratamiento.',
+          description: 'Apoya tu recuperación y movilidad con planes de sesiones de kinesiología a precio Cyber.',
           items: [
             { discount: '30% OFF', title: 'Plan 10 sesiones de kinesiología', cyber: '$175.000', normal: '$250.000', saving: '$75.000', meta: 'Excluye Prof. Roberto Urzua', key: 'kine-10', image: 'kine-10.webp', alt: 'Sesión de kinesiología' },
             { discount: '25% OFF', title: 'Plan 5 sesiones de kinesiología', cyber: '$93.750', normal: '$125.000', saving: '$31.500', meta: 'Excluye Prof. Roberto Urzua', key: 'kine-5', image: 'kine-5.webp', alt: 'Sesión de kinesiología' }
@@ -64,7 +64,7 @@
         },
         {
           category: 'Masoterapia',
-          description: 'Planes de masoterapia con vigencia extendida.',
+          description: 'Sesiones orientadas a aliviar tensión muscular y favorecer la recuperación y el bienestar corporal.',
           items: [
             { discount: '25% DCTO.', title: 'Plan 8 sesiones de masoterapia', cyber: '$180.000', normal: '$240.000', saving: '$60.000', meta: 'Vigencia: 10 meses', key: 'maso-8', image: 'maso-8.webp', alt: 'Sesión de masoterapia' },
             { discount: '20% DCTO.', title: 'Plan 4 sesiones de masoterapia', cyber: '$96.000', normal: '$120.000', saving: '$24.000', meta: 'Vigencia: 6 meses', key: 'maso-4', image: 'maso-4.webp', alt: 'Sesión de masoterapia' }
@@ -72,14 +72,14 @@
         },
         {
           category: 'Ondas de choque',
-          description: 'Plan Cyber para tratamiento con ondas de choque.',
+          description: 'Tratamiento utilizado en distintas molestias musculoesqueléticas, disponible en formato de 5 sesiones.',
           items: [
             { discount: '25% DCTO.', title: 'Plan 5 sesiones de ondas de choque', cyber: '$112.500', normal: '$150.000', saving: '$37.500', meta: 'Valor por sesión: $30.000', key: 'ondas-5', image: 'ondas-choque.webp', alt: 'Tratamiento con ondas de choque' }
           ]
         },
         {
           category: 'Gift Cards',
-          description: 'Regala una sesión Raquis con precio Cyber.',
+          description: 'Regala bienestar con una sesión de quiropráctica o masoterapia para usar en nuestras clínicas.',
           items: [
             { discount: '20% DCTO.', title: 'Gift Card de masoterapia · 1 sesión', cyber: '$24.000', normal: '$30.000', saving: '$6.000', meta: 'Vigencia: 2 meses', key: 'gift-maso', image: 'gift-maso.webp', alt: 'Gift Card de masoterapia Raquis' },
             { discount: '15% DCTO.', title: 'Gift Card de quiropráctica · 1 sesión', cyber: '$30.000', normal: '$35.000', saving: '$5.000', meta: 'Vigencia: 2 meses', key: 'gift-quiro', image: 'gift-quiro.webp', alt: 'Gift Card de quiropráctica Raquis' }
