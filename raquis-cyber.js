@@ -116,7 +116,7 @@
             <div class="meta">${item.meta}</div>
             <a class="buy js-buy ${disabled ? 'is-disabled' : ''}" data-offer="${item.key}" href="${href}" ${disabled ? 'aria-disabled="true"' : 'target="_blank" rel="noopener noreferrer"'}>COMPRAR</a>
             <div class="secure-payment">
-              <span>Paga con seguridad con</span>
+              <span>Pago seguro procesado por</span>
               <img src="https://banco.santander.cl/uploads/000/015/050/0affa7e1-10e5-45ff-b0e3-7616aee7d686/original/getnet_logo.svg" alt="Getnet" loading="lazy">
             </div>
           </div>
