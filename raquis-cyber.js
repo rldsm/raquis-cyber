@@ -95,7 +95,8 @@
         'quiro-10': 'https://micrositios.getnet.cl/link/show?genid=178911&code=bb5ce4f2d440741eb85fe844ae72ea8904ecd0d1810730425e0303383035e15e',
         'quiro-4': 'https://micrositios.getnet.cl/link/show?genid=178912&code=255a32c208e411097fc504fa3150bbbeb088f891326af614c9fd734875860e65',
         'kine-10': 'https://micrositios.getnet.cl/link/show?genid=178913&code=c4c12fe6c1b05470bd645d2e6958d34b1e09d16e25e1156ef608741577c97fde',
-        'kine-5': 'https://micrositios.getnet.cl/link/show?genid=178914&code=bcb8e434b143a1601b2ef59a89b4cab572dda01d2b17b687e566a564394b2d70'
+        'kine-5': 'https://micrositios.getnet.cl/link/show?genid=178914&code=bcb8e434b143a1601b2ef59a89b4cab572dda01d2b17b687e566a564394b2d70',
+        'maso-8': 'https://micrositios.getnet.cl/link/show?genid=178915&code=d966104cf2e103745d8610c06fcee4dfe381ba4a525ad532d6f14ea9747bc5fb'
       };
       const attr = this.getAttribute(`buy-${key}`);
       return attr || defaults[key] || '#';
