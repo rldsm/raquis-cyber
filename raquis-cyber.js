@@ -59,7 +59,7 @@
           description: 'Apoya tu recuperación y movilidad con planes de sesiones de kinesiología a precio Cyber.',
           items: [
             { discount: '30% OFF', title: 'Plan 10 sesiones de kinesiología', cyber: '$175.000', normal: '$250.000', saving: '$75.000', meta: 'Excluye Prof. Roberto Urzua', key: 'kine-10', image: 'kine-10.webp', alt: 'Sesión de kinesiología' },
-            { discount: '25% OFF', title: 'Plan 5 sesiones de kinesiología', cyber: '$93.750', normal: '$125.000', saving: '$31.500', meta: 'Excluye Prof. Roberto Urzua', key: 'kine-5', image: 'kine-5.webp', alt: 'Sesión de kinesiología' }
+            { discount: '25% OFF', title: 'Plan 5 sesiones de kinesiología', cyber: '$93.750', normal: '$125.000', saving: '$31.250', meta: 'Excluye Prof. Roberto Urzua', key: 'kine-5', image: 'kine-5.webp', alt: 'Sesión de kinesiología' }
           ]
         },
         {
