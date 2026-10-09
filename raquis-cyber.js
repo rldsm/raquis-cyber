@@ -165,16 +165,16 @@
           <div class="cyber-marquee" aria-label="Cyber extendido hasta el domingo 11 de octubre">
             <div class="cyber-marquee-track">
               <div class="cyber-marquee-group">
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
               </div>
               <div class="cyber-marquee-group" aria-hidden="true">
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
-                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE—</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
+                <span>EXTENDEMOS EL CYBER HASTA EL DOMINGO 11 DE OCTUBRE —</span>
               </div>
             </div>
           </div>
