@@ -82,7 +82,7 @@
           description: 'Regala bienestar con una sesión de quiropráctica o masoterapia para usar en nuestras clínicas.',
           items: [
             { discount: '20% DCTO.', title: 'Gift Card de masoterapia · <span class="nowrap">1 sesión</span>', cyber: '$24.000', normal: '$30.000', saving: '$6.000', meta: 'Vigencia: 2 meses', key: 'gift-maso', image: 'gift-maso.webp', alt: 'Gift Card de masoterapia Raquis' },
-            { discount: '15% DCTO.', title: 'Gift Card de quiropráctica · <span class="nowrap">1 sesión</span>', cyber: '$30.000', normal: '$35.000', saving: '$5.000', meta: 'Vigencia: 2 meses', key: 'gift-quiro', image: 'gift-quiro.webp', alt: 'Gift Card de quiropráctica Raquis' }
+            { discount: '25% DCTO.', title: 'Gift Card de quiropráctica · <span class="nowrap">1 sesión</span>', cyber: '$26.250', normal: '$35.000', saving: '$8.750', meta: 'Vigencia: 3 meses', key: 'gift-quiro', image: 'gift-quiro.webp', alt: 'Gift Card de quiropráctica Raquis' }
           ]
         }
       ];
