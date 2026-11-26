@@ -90,15 +90,15 @@
 
     purchaseUrl(key) {
       const defaults = {
-        'gift-quiro': 'https://micrositios.getnet.cl/link/show?genid=178909&code=c9772816c78e9b0a4331c6deac08abf848963024f4528ac86bf594cdcbbed956',
-        'gift-maso': 'https://micrositios.getnet.cl/link/show?genid=178910&code=dec1c7309b1f59087f4bbcbb243d28a378b10e074821e506979e625a03ee6ae3',
-        'quiro-10': 'https://micrositios.getnet.cl/link/show?genid=178911&code=bb5ce4f2d440741eb85fe844ae72ea8904ecd0d1810730425e0303383035e15e',
-        'quiro-4': 'https://micrositios.getnet.cl/link/show?genid=178912&code=255a32c208e411097fc504fa3150bbbeb088f891326af614c9fd734875860e65',
-        'kine-10': 'https://micrositios.getnet.cl/link/show?genid=178913&code=c4c12fe6c1b05470bd645d2e6958d34b1e09d16e25e1156ef608741577c97fde',
-        'kine-5': 'https://micrositios.getnet.cl/link/show?genid=178914&code=bcb8e434b143a1601b2ef59a89b4cab572dda01d2b17b687e566a564394b2d70',
-        'maso-8': 'https://micrositios.getnet.cl/link/show?genid=178915&code=d966104cf2e103745d8610c06fcee4dfe381ba4a525ad532d6f14ea9747bc5fb',
-        'maso-4': 'https://micrositios.getnet.cl/link/show?genid=178916&code=64bf80777ccf134bca03bfa0c932b629e526f03b85bfac09112cf05cc93ce416',
-        'ondas-5': 'https://micrositios.getnet.cl/link/show?genid=178917&code=cf7712294d1539a775c4e10a9cb27e158782ef932e14473bbb9aeed46ec7234c'
+        'ondas-5': 'https://micrositios.getnet.cl/link/show?genid=189715&code=660d84ed5ce11a4240ad631eb4cf2bbc35e005a6542cd639dc8f1bb016ec9ff0',
+        'maso-8': 'https://micrositios.getnet.cl/link/show?genid=189716&code=2aad8f937e2665ffc29de48a2168a1deb119c18ffcb25c08926ef9dad72ee231',
+        'maso-4': 'https://micrositios.getnet.cl/link/show?genid=189717&code=58b21b92b52552e3bea081a06f7fb76d9a8c960dbfb61c35da2ea6f81771e118',
+        'gift-maso': 'https://micrositios.getnet.cl/link/show?genid=189718&code=e1743297d3fbbf840fbe6af5ecaab5af62552f6382d2b9e50825bb71b1b03f2d',
+        'kine-10': 'https://micrositios.getnet.cl/link/show?genid=189719&code=b585ae1fb12bf7220a426d6c7810d42a2ea694b96d7adcd4fb93de75d6968300',
+        'kine-5': 'https://micrositios.getnet.cl/link/show?genid=189720&code=1a898df0d6508d070045e3d62f5eda590e9cf67d74a5b8fd5711592a528b226b',
+        'quiro-10': 'https://micrositios.getnet.cl/link/show?genid=189721&code=099e690ccdc0e028093a63e43ecc59158219fb288ccf8b76ed95362c2e0ed49d',
+        'quiro-4': 'https://micrositios.getnet.cl/link/show?genid=189722&code=0f3b9bec45b980f438850660fa8f80925f6c8f4d8d2732b7d216bbdf91534d30',
+        'gift-quiro': 'https://micrositios.getnet.cl/link/show?genid=189723&code=044f3f91810cd81bbd2469f4565a92c5ab34c6f9ed94a8fd858d8920f2e51088'
       };
       const attr = this.getAttribute(`buy-${key}`);
       return attr || defaults[key] || '#';
